@@ -27,29 +27,43 @@
     }
 
     body {
-      background-color: #F3F4EC;
+      background-color: #FFFFFF;
     }
   </style>
+   <!-- link Tailwind Css -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
 
 <body>
-  <header id="header">
-    <div><p>আমাদের যে কোন পণ্য অর্ডার করতে কল বা WhatsApp করুন:   |  </p>
-      <a href="#">+8801321208940</a>
-  <a href="#">হট লাইন: 09642-922922</a></div>
-    <nav class="vavbar">
-      <img src="./assets/brand-logo.png" alt="">
-      <input type="text" placeholder="কী খুঁজছেন?">
-      <button>
-        <i class="fa fa-search" aria-hidden="true"></i>
-      </button>
-      <a href="#"><i class="fa fa-user" aria-hidden="true"></i>
-        </i></a>
-      <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        </i></a>
+  <header id="header" >
+    <div class="flex bg-[#fc8934] py-2 text-white  justify-center gap-5 text-[16px]">
+      <p class="">আমাদের যে কোন পণ্য অর্ডার করতে কল বা WhatsApp করুন:   |</p>
+      <a href="#"><i class="fa-solid fa-phone"></i>+8801321208940</a>
+       <a href="#"><i class="fa-solid fa-phone"></i>হট লাইন: 09642-922922</a>
+      </div>
+    <nav class="">
+      <!-- header top -->
+      <div class="flex justify-between items-center py-5 text-[#fc8934] container mx-auto">
+        
+        <button class="border-0">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+        <img src="./assets/brand-logo.png" alt="" class="w-32">
         <div>
-          <ul>
+          <a href="#"><i class="fa fa-user" aria-hidden="true"></i>
+        </i></a>
+        <a href="#"><i class="fa fa-shopping-cart ml-2" aria-hidden="true"></i>
+        </i></a>
+        </div>
+         
+      </div>
+      
+      
+      
+      
+      <div class=" bg-[#f3f3f3] py-3 gap-5 text-[16px]">
+          <ul class="flex flex-row bg-[#f3f3f3] py-3 gap-5 text-[16px] container mx-auto">
               <li>Offer Zone</li>
               <li>Best Seller</li>
               <li>Oil</li>
@@ -66,661 +80,123 @@
           </ul>
       </div>
     </nav>
-    <div class="hero-img">
+    <div class="w-[100%]">
       <img src="./assets/Ghorerbazar_cover_design_02.webp" alt="">
   </div>
   </header>
-<section class="card-section">
-  ALL PRODUCT
+<section class="card-section pt-12 container mx-auto">
   
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
+  <h1 class="text-center text-3xl font-light mb-6 my-10">ALL PRODUCTS</h1>
+  
+  <div class="product-container  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+
+
+    <div class="product-item border border-gray-300  p-5 flex flex-col items-center gap-3 relative">
+      <span class="bg-[#98d8ca] text-[12px] px-2  rounded-full absolute top-4 text-white">NO SALE</span>
+      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="img">
+      <h3>মাস্টারয়েড তেল ৫ লিটার</h3>
+      <div class="price flex gap-3">
+        <p>৳ ১,২০০.00</p><p class="line-through text-gray-400">৳ ১,৫০০.00</p>
       </div>
-      <button class="add-btn">Quick Add</button>
+      
+      <button class="bg-[#fc8934] text-white px-4 py-2 rounded-md">Quick Add</button>
     </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
+    <div class="product-item border border-gray-300  p-5 flex flex-col items-center gap-3 relative">
+      <span class="bg-[#98d8ca] text-[12px] px-2  rounded-full absolute top-4 text-white">NO SALE</span>
+      <img src="./assets/Black-Seeds-honey-1000gm_38dde83a-34b0-484a-87fa-73e27d337d11.webp" alt="img">
+      <h3>মাস্টারয়েড তেল ৫ লিটার</h3>
+      <div class="price flex gap-3">
+        <p>৳ ১,২০০.00</p><p class="line-through text-gray-400">৳ ১,৫০০.00</p>
       </div>
-      <button class="add-btn">Quick Add</button>
+      
+      <button class="bg-[#fc8934] text-white px-4 py-2 rounded-md">Quick Add</button>
     </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
+    <div class="product-item border border-gray-300  p-5 flex flex-col items-center gap-3 relative">
+      <span class="bg-[#98d8ca] text-[12px] px-2  rounded-full absolute top-4 text-white">NO SALE</span>
+      <img src="./assets/Black-Seeds-honey-1000gm_38dde83a-34b0-484a-87fa-73e27d337d11.webp" alt="img">
+      <h3>মাস্টারয়েড তেল ৫ লিটার</h3>
+      <div class="price flex gap-3">
+        <p>৳ ১,২০০.00</p><p class="line-through text-gray-400">৳ ১,৫০০.00</p>
       </div>
-      <button class="add-btn">Quick Add</button>
+      
+      <button class="bg-[#fc8934] text-white px-4 py-2 rounded-md">Quick Add</button>
     </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
+    <div class="product-item border border-gray-300  p-5 flex flex-col items-center gap-3 relative">
+      <span class="bg-[#98d8ca] text-[12px] px-2  rounded-full absolute top-4 text-white">NO SALE</span>
+      <img src="./assets/Black-Seeds-honey-1000gm_38dde83a-34b0-484a-87fa-73e27d337d11.webp" alt="img">
+      <h3>মাস্টারয়েড তেল ৫ লিটার</h3>
+      <div class="price flex gap-3">
+        <p>৳ ১,২০০.00</p><p class="line-through text-gray-400">৳ ১,৫০০.00</p>
       </div>
-      <button class="add-btn">Quick Add</button>
+      
+      <button class="bg-[#fc8934] text-white px-4 py-2 rounded-md">Quick Add</button>
     </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
+    <div class="product-item border border-gray-300  p-5 flex flex-col items-center gap-3 relative">
+      <span class="bg-[#98d8ca] text-[12px] px-2  rounded-full absolute top-4 text-white">NO SALE</span>
+      <img src="./assets/Black-Seeds-honey-1000gm_38dde83a-34b0-484a-87fa-73e27d337d11.webp" alt="img">
+      <h3>মাস্টারয়েড তেল ৫ লিটার</h3>
+      <div class="price flex gap-3">
+        <p>৳ ১,২০০.00</p><p class="line-through text-gray-400">৳ ১,৫০০.00</p>
       </div>
-      <button class="add-btn">Quick Add</button>
+      
+      <button class="bg-[#fc8934] text-white px-4 py-2 rounded-md">Quick Add</button>
     </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
+    <div class="product-item border border-gray-300  p-5 flex flex-col items-center gap-3 relative">
+      <span class="bg-[#98d8ca] text-[12px] px-2  rounded-full absolute top-4 text-white">NO SALE</span>
+      <img src="./assets/Black-Seeds-honey-1000gm_38dde83a-34b0-484a-87fa-73e27d337d11.webp" alt="img">
+      <h3>মাস্টারয়েড তেল ৫ লিটার</h3>
+      <div class="price flex gap-3">
+        <p>৳ ১,২০০.00</p><p class="line-through text-gray-400">৳ ১,৫০০.00</p>
       </div>
-      <button class="add-btn">Quick Add</button>
+      
+      <button class="bg-[#fc8934] text-white px-4 py-2 rounded-md">Quick Add</button>
     </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
+    <div class="product-item border border-gray-300  p-5 flex flex-col items-center gap-3 relative">
+      <span class="bg-[#98d8ca] text-[12px] px-2  rounded-full absolute top-4 text-white">NO SALE</span>
+      <img src="./assets/Black-Seeds-honey-1000gm_38dde83a-34b0-484a-87fa-73e27d337d11.webp" alt="img">
+      <h3>মাস্টারয়েড তেল ৫ লিটার</h3>
+      <div class="price flex gap-3">
+        <p>৳ ১,২০০.00</p><p class="line-through text-gray-400">৳ ১,৫০০.00</p>
       </div>
-      <button class="add-btn">Quick Add</button>
+      
+      <button class="bg-[#fc8934] text-white px-4 py-2 rounded-md">Quick Add</button>
     </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
+    <div class="product-item border border-gray-300  p-5 flex flex-col items-center gap-3 relative">
+      <span class="bg-[#98d8ca] text-[12px] px-2  rounded-full absolute top-4 text-white">NO SALE</span>
+      <img src="./assets/Black-Seeds-honey-1000gm_38dde83a-34b0-484a-87fa-73e27d337d11.webp" alt="img">
+      <h3>মাস্টারয়েড তেল ৫ লিটার</h3>
+      <div class="price flex gap-3">
+        <p>৳ ১,২০০.00</p><p class="line-through text-gray-400">৳ ১,৫০০.00</p>
       </div>
-      <button class="add-btn">Quick Add</button>
+      
+      <button class="bg-[#fc8934] text-white px-4 py-2 rounded-md">Quick Add</button>
     </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
+    <div class="product-item border border-gray-300  p-5 flex flex-col items-center gap-3 relative">
+      <span class="bg-[#98d8ca] text-[12px] px-2  rounded-full absolute top-4 text-white">NO SALE</span>
+      <img src="./assets/Black-Seeds-honey-1000gm_38dde83a-34b0-484a-87fa-73e27d337d11.webp" alt="img">
+      <h3>মাস্টারয়েড তেল ৫ লিটার</h3>
+      <div class="price flex gap-3">
+        <p>৳ ১,২০০.00</p><p class="line-through text-gray-400">৳ ১,৫০০.00</p>
       </div>
-      <button class="add-btn">Quick Add</button>
+      
+      <button class="bg-[#fc8934] text-white px-4 py-2 rounded-md">Quick Add</button>
     </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
+    <div class="product-item border border-gray-300  p-5 flex flex-col items-center gap-3 relative">
+      <span class="bg-[#98d8ca] text-[12px] px-2  rounded-full absolute top-4 text-white">NO SALE</span>
+      <img src="./assets/Black-Seeds-honey-1000gm_38dde83a-34b0-484a-87fa-73e27d337d11.webp" alt="img">
+      <h3>মাস্টারয়েড তেল ৫ লিটার</h3>
+      <div class="price flex gap-3">
+        <p>৳ ১,২০০.00</p><p class="line-through text-gray-400">৳ ১,৫০০.00</p>
       </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
-  </div>
-  <div class="product-card">
-    <div class="image-container">
-      <span class="badge">ON SALE</span>
-      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="Oil">
-      <div class="logo-overlay">🌱</div>
-    </div>
-    <div class="card-content">
-      <h3 class="product-title">দেশি সরিষার তেল/Deshi..</h3>
-      <div class="price">
-        <span class="new-price">Tk 1,470.00</span>
-        <span class="old-price">Tk 1,550.00</span>
-      </div>
-      <button class="add-btn">Quick Add</button>
-    </div>
+      
+      <button class="bg-[#fc8934] text-white px-4 py-2 rounded-md">Quick Add</button>
+    </div>
+    
+
   </div>
 
 </section>
-<section class="img-cellection">
+<section class="img-cellection hidden">
   <h1>COLLECTION</h1> 
     <div>
       <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="img">
@@ -731,7 +207,7 @@
       <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="img">
     </div>
 </section>
-<section class="footer-field">
+<section class="footer-field hidden">
   <footer>
     <div>
       <img src="./assets/brand-logo.png" alt="img">
