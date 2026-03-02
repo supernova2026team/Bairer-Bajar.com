@@ -24,29 +24,30 @@
             background-color: #F3F4EC;
         }
     </style>
-
+    <!-- link Tailwind Css -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-    <section id="login-section">
-        <div class="brand-logo">
+    <section id="login-section" class="max-w-2xl mx-auto border border-gray-300 rounded-xl p-10 mt-20 bg-white">
+        <div class="brand-logo max-w-2xs mx-auto mb-10">
             <img src="./assets/brand-logo.png" alt="brand-logo">
         </div>
         <div class="login-form">
             <div class="wlc-message">
-                <h1>স্বাগতম!</h1>
-                <p>আপনার অ্যাকাউন্ট লগ-ইন করুন</p>
+                <h1 class="text-4xl font-bold text-black">স্বাগতম!</h1>
+                <p class="text-gray-400 pt-3">আপনার অ্যাকাউন্ট লগ-ইন করুন</p>
             </div>
-            <div class="user-field">
-                <div class="input-field">
-                    <input type="text" id="number-email" placeholder="মোবাইল নাম্বার বা ইমেইল">
-                    <input type="password" id="password" placeholder="পাসওয়ার্ড">
+            <div class="user-field ">
+                <div class="input-field flex flex-col gap-5 my-5">
+                    <input type="text" id="number-email" placeholder="মোবাইল নাম্বার বা ইমেইল" class="border border-gray-400 p-4 rounded-lg">
+                    <input type="password" id="password" placeholder="পাসওয়ার্ড" class="border border-gray-400 p-4 rounded-lg">
                 </div>
-                <button class="btn">
+                <button class="btn bg-[#4524db] w-full text-white py-4 rounded-lg mb-5">
                     <a href="index.html">লগ-ইন করুন</a>
                 </button>
-                <p>পাসওয়ার্ড ভুলে গেছেন?</p>
-                <p>নতুন অ্যাকাউন্ট তৈরি করুন</p>
+                <p class="text-center">পাসওয়ার্ড ভুলে গেছেন?</p>
+                <p class="text-center pt-3">নতুন অ্যাকাউন্ট তৈরি করুন</p>
             </div>
         </div>
     </section>
