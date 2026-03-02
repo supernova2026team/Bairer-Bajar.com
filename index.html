@@ -29,7 +29,7 @@
 </head>
 
 <body>
-    <section id="login-section" class="max-w-2xl mx-auto border border-gray-300 rounded-xl p-10 mt-20 bg-white">
+    <section id="login-section" class="max-w-2xl mx-auto border border-gray-300 rounded-xl p-10 mt-20 bg-white mb-4">
         <div class="brand-logo max-w-2xs mx-auto mb-10">
             <img src="./assets/brand-logo.png" alt="brand-logo">
         </div>
@@ -43,16 +43,16 @@
                     <input type="text" id="number-email" placeholder="মোবাইল নাম্বার বা ইমেইল" class="border border-gray-400 p-4 rounded-lg">
                     <input type="password" id="password" placeholder="পাসওয়ার্ড" class="border border-gray-400 p-4 rounded-lg">
                 </div>
-                <button class="btn bg-[#4524db] w-full text-white py-4 rounded-lg mb-5">
-                    <a href="dashboard.html">লগ-ইন করুন</a>
+                <button id="loginBtn" class="btn bg-[#4524db] w-full text-white py-4 rounded-lg mb-5">
+                    লগ-ইন করুন
                 </button>
                 <p class="text-center">পাসওয়ার্ড ভুলে গেছেন?</p>
-                <p class="text-center pt-3">নতুন অ্যাকাউন্ট তৈরি করুন</p>
+                <p id="signUpBtn" class="text-center pt-3">নতুন অ্যাকাউন্ট তৈরি করুন</p>
             </div>
         </div>
     </section>
 
-    <section id="sign-up-section" class="max-w-2xl mx-auto border border-gray-300 rounded-xl p-10 mt-20 bg-white">
+    <section id="sign-up-section" class="hidden max-w-2xl mx-auto border border-gray-300 rounded-xl p-10 mt-20 bg-white mb-4">
         <div class="brand-logo  max-w-2xs mx-auto mb-10">
             <img src="./assets/brand-logo.png" alt="brand-logo">
         </div>
@@ -64,17 +64,18 @@
                     class="border border-gray-400 p-4 rounded-lg">
                 <input type="number" id="number" placeholder="মোবাইল নাম্বার" class="border border-gray-400 p-4 rounded-lg">
                 <input type="email" id="email" placeholder="ইমেইল(ঐচ্ছিক)" class="border border-gray-400 p-4 rounded-lg">
-                <input type="password" id="password" placeholder="পাসওয়ার্ড" class="border border-gray-400 p-4 rounded-lg">
-                <input type="password" id="password" placeholder="পাসওয়ার্ড নিশ্চিত করুন" class="border border-gray-400 p-4 rounded-lg">
+                <input type="password" id="password-signUp" placeholder="পাসওয়ার্ড" class="border border-gray-400 p-4 rounded-lg">
+                <input type="password" id="password-signup" placeholder="পাসওয়ার্ড নিশ্চিত করুন" class="border border-gray-400 p-4 rounded-lg">
                 <div class="chackbox">
-                    <input type="checkbox">
+                    <input type="checkbox" id="loginCheck">
                     <p>আমি <span>শর্তাবলী</span> এবং <span>গোপনীয়তা নীতি</span> মেনে নিচ্ছি </p>
                 </div>
-                <button class="btn bg-[#4524db] w-full text-white py-4 rounded-lg mb-5">নিবন্ধন করুন</button>
-                <p>ইতিমধ্যে অ্যাকাউন্ট আছে? <span>লগ-ইন করুন</span></p>
+                <button id="registerBtn" class="btn bg-[#4524db] w-full text-white py-4 rounded-lg mb-5">নিবন্ধন করুন</button>
+                
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
