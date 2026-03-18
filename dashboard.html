@@ -26,45 +26,50 @@
       font-family: "Arimo", sans-serif;
     }
 
-    body {
-      background-color: #FFFFFF;
-    }
+    
   </style>
    <!-- link Tailwind Css -->
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
 
-<body>
+<body class="bg-white-200">
   <header id="header" >
-    <div class="flex bg-[#fc8934] py-2 text-white  justify-center gap-5 text-[16px]">
+    <div class="flex bg-[#fc8934] py-2 text-white  justify-center gap-5 text-[16px] [@media(max-width:510px)]:flex-col [@media(max-width:510px)]:gap-2 [@media(max-width:510px)]:justify-center [@media(max-width:510px)]:p-2">
       <p class="">আমাদের যে কোন পণ্য অর্ডার করতে কল বা WhatsApp করুন:   |</p>
       <a href="#"><i class="fa-solid fa-phone"></i>+8801321208940</a>
        <a href="#"><i class="fa-solid fa-phone"></i>হট লাইন: 09642-922922</a>
       </div>
-    <nav class="">
+   
+  </header>
+   <nav class=" ">
       <!-- header top -->
-      <div class="flex justify-between items-center py-5 text-[#fc8934] container mx-auto">
+
+        <div class="flex justify-between items-center py-5 text-[#fc8934] container mx-auto [@media(max-width:510px)]:flex-col [@media(max-width:510px)]:py-2 [@media(max-width:510px)]:gap-2">
         
         <button class="border-0">
           <i class="fa fa-search" aria-hidden="true"></i>
         </button>
-        <img src="./assets/brand-logo.png" alt="" class="w-32">
+        <img src="./assets/brand-logo.png" alt="" class="w-26">
         <div>
           <a href="#"><i class="fa fa-user" aria-hidden="true"></i>
         </i></a>
-        <a href="#"><i class="fa fa-shopping-cart ml-2" aria-hidden="true"></i>
+        <a href="#"><i class="fa fa-shopping-cart ml-2 fixed text-green-500 z-90 " aria-hidden="true"></i>
         </i></a>
       
-        </div>
+        
          
       </div>
-        <div id="empty-section" class="m-4 p-2 border justify-center hidden rounded-md grid grid-cols-5 gap-2 max-w-[510px]:grid-cols-1">
+      </div>
+      
+        <div id="empty-section" class="m-4 p-2 border justify-center hidden rounded-md grid grid-cols-5 gap-2 [@media(max-width:510px)]:grid-cols-1">
   
 </div>
       
-      <div class=" bg-[#f3f3f3] py-3 gap-5 text-[16px]">
-          <ul class="flex flex-row bg-[#f3f3f3] py-3 gap-5 text-[16px] container mx-auto">
+      
+    </nav>
+    <div class=" bg-[#fc8934] py-3 gap-5 text-[16px]">
+          <ul class="flex flex-wrap  py-3 [@media(max-width:510px)]:py-1 gap-5 [@media(max-width:510px)]:gap-3 text-[16px] container justify-center text-white">
               <li>Offer Zone</li>
               <li>Best Seller</li>
               <li>Oil</li>
@@ -80,17 +85,15 @@
               <li>Pickle</li>
           </ul>
       </div>
-    </nav>
-    <div class="w-[100%]">
+    <div class="max-w-[92%] mx-auto pt-1">
       <img src="./assets/Ghorerbazar_cover_design_02.webp" alt="">
   </div>
-  </header>
 
-<section class="card-section pt-12 ">
+<section class="card-section pt-6 [@media(max-width:510px)]:pt-4 ">
   
   <h1 class="text-center text-3xl font-light mb-6 my-10">ALL PRODUCTS</h1>
   
-  <div class="product-container  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+  <div class="product-container  grid grid-cols-5 [@media(max-width:510px)]:grid-cols-1 gap-6 [@media(max-width:510px)]:gap-3 max-w-[92%] mx-auto">
 
     <!-- ALL BUTTONS UPDATED -->
 
@@ -209,6 +212,57 @@
 </section>
 
 <!-- rest unchanged -->
+
+<section class="img-cellection pt-6 [@media(max-width:510px)]:pt-4 container mx-auto">
+  <h1 class="text-center text-3xl font-light mb-6 my-10">COLLECTION</h1> 
+  <div class="collection-container grid grid-cols-2 [@media(max-width:510px)]:grid-cols-1  gap-6 [@media(max-width:510px)]:gap-3 max-w-1[92%] justify-center mx-auto ">
+    <div class="flex flex-col justify-center items-center">
+      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="img" class="border border-gray-300 max-h-[200px]">
+     <p class="text-xl font-bold text-center pt-4">Organic Oil</p>
+    </div>
+    <div class="flex flex-col justify-center items-center">
+      <img src="./assets/Shsoti-Mastraid-oil5lt (1).jpg" alt="img" class="border border-gray-300 max-h-[200px]">
+     <p class="text-xl font-bold text-center pt-4">Organic Oil</p>
+    </div>
+    </div>
+</section>
+<hr class="max-w-1[92%] mx-auto text-[#fc8934] my-8 [@media(max-width:510px)]:my-4">
+<section class="footer-field pt-4 [@media(max-width:510px)]:pt-2 ">
+  <footer class="pt-4">
+    <div class="footer-container grid grid-cols-3 [@media(max-width:510px)]:grid-cols-1   gap-6 [@media(max-width:510px)]:gap-2 max-w-[92%] mx-auto container ml-50 [@media(max-width:510px)]:ml-6   ">
+      <div class="brand-info  space-y-4 mr-20 [@media(max-width:510px)]:mr-5">
+        <img src="./assets/brand-logo.png" alt="img" class="w-26">
+        <p class="text-sm font-bold">Bahirer Bazar: Your Trusted Source for Safe & Organic Food</p>
+        <p class="text-sm">Bahirer Bazar is a leading e-commerce platform committed to delivering safe, healthy, and organic food products across Bangladesh.</p>
+    </div>
+
+    <div class="space-y-2">
+      <h3 class="text-[#fc8934] text-xl font-bold">Company</h3>
+      <p class="font-bold">About Us</p>
+      <p class="text-sm"><a href="#">রিটার্ন পলিসি</a></p>
+      <p class="text-sm"><a href="#">রিফান্ড পলিসি</a></p>
+    </div>
+
+    <div class="space-y-2">
+      <h3 class="text-[#fc8934] text-xl font-bold">QUICK HELP</h3>
+      <p class="text-sm"><a href="#">গ্রাহক সেবা</a></p>
+      <p class="text-sm"><a href="#">Contact</a></p>
+    </div>
+
+    
+    </div>
+
+      <div class="fa-copyright bg-[#fc8934] text-center py-8 [@media(max-width:510px)]:py-5 mt-12 [@media(max-width:510px)]:mt-6">
+        <div class="container mx-auto flex [@media(max-width:510px)]:flex-col justify-between items-center [@media(max-width:510px)]:gap-2 text-white">
+        <i class="fa-brands fa-facebook-f text-white"></i>
+        <p class="text-sm">© ঘরের বাজার 2024</p>
+        <div>
+          <p class=""><i class="fa-solid fa-hand"></i><a href="#">Chat with us</a></p>
+        </div>
+      </div></div>
+
+  </footer>
+</section>
 
 <script src="dashboard.js"></script>
 </body>
